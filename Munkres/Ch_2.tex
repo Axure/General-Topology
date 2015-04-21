@@ -43,6 +43,13 @@ A map $f:X\rightarrow Y$ is said to be an \textbf{\textit{open map}} if for ever
 \begin{problem}
 Show that the dictionary order topology on the set $\mr\times\mr$ is the same as the product topology $\mr_d\times\mr$, where $\mr_d$ denotes $\mr$ in the discrete topology. Compare this topology with the standard topology on $\mr^2$.
 \begin{proof}
+We would like to show that there exist a homeomorphism between these two spaces. That their open subsets correspond or contain each other.
+
+Let's recall the definition of dictionary order topology. It is a kind of order topology. There is no largest or smallest element in $\mr\times \mr$ so the only elements in the basis is of the type form $(a, b)$. Write $a=(x_a, y_a), b=(x_b, y_b)$, we have $x_b \ge x_a$ an d if $x_b = x_a$ then $y_b > y_a$.
+
+And recall the definition of the product topology. For a finite index set, the basis of the product consists of products of basis, which are further reduced to $\{x\}\times U$ where $U$ is in the basis of $\mr$, which should be an open interval $(y,y')$. Such kinds of open set is contained in the basis of the dictionary order topology, as it's just $((x, y), (x, y'))$. With this kind of open sets we are able to constitute $x\times(-\infty, y), x\times(y, +\infty), x\times(-\infty, +\infty)$ and then easily other kind of open sets in the basis of the dictionary order topology.
+
+Are there any geometric intuitions behind the scenes?
 
 \end{proof}
 \end{problem}
